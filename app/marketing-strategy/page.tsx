@@ -27,72 +27,72 @@ const services = [
     icon: Megaphone,
     title: "Digital Marketing",
     description:
-      "Data-driven digital marketing campaigns across all major platforms to maximize your ROI.",
+      "Data-Driven Digital Marketing strategies designed to maximize reach, drive conversions, and optimize ROI across all platforms.",
     features: [
-      "Social Media Marketing",
-      "Search Engine Marketing (SEM)",
-      "Email Marketing Automation",
-      "Content Marketing Strategy",
+      "Social Media Strategy & Management",
+      "SEM Optimization & PPC",
+      "Marketing Automation & Email Campaigns",
+      "Content Marketing & Brand Storytelling",
     ],
   },
   {
     icon: Palette,
     title: "Brand Strategy & Design",
     description:
-      "Build a memorable brand identity that resonates with your target audience.",
+      "Craft a distinctive brand identity that engages your audience and strengthens market presence.",
     features: [
-      "Brand Identity Development",
-      "Visual Design & Logo Creation",
-      "Brand Guidelines & Standards",
-      "Rebranding & Refresh",
+      "Brand Identity Development & Positioning",
+      "Visual Design, Logo, and Creative Assets",
+      "Brand Guidelines, Standards & Documentation",
+      "Rebranding & Brand Evolution Solutions",
     ],
   },
   {
     icon: Search,
     title: "SEO & Content",
     description:
-      "Boost your online visibility and drive organic traffic with our SEO expertise.",
+      "Enhance your online presence and attract qualified traffic through expert SEO strategies.",
     features: [
-      "Technical SEO Audit",
-      "Keyword Research & Strategy",
-      "Content Creation & Optimization",
-      "Link Building Campaigns",
+      "Comprehensive Technical SEO Audit & Analysis",
+      "Keyword Research, Strategy & Competitive Analysis",
+      "Content Development & On-Page Optimization",
+      "Link Building & Authority Enhancement Campaigns",
     ],
   },
   {
     icon: BarChart3,
     title: "Market Research",
     description:
-      "In-depth market analysis to understand your customers and competition.",
+      "In-depth market analysis to gain actionable insights on customers, competitors, and trends.",
     features: [
-      "Competitive Analysis",
-      "Customer Insights Research",
-      "Market Sizing & Opportunity",
-      "Trend Analysis & Forecasting",
+      "Competitive Landscape Analysis & Benchmarking",
+      "Customer Insights & Behavior Research",
+      "Market Sizing, Segmentation & Opportunity Assessment",
+      "Trend Forecasting & Emerging Market Insights",
     ],
   },
   {
     icon: Lightbulb,
     title: "Business Strategy",
     description:
-      "Strategic consulting to help you achieve sustainable business growth.",
+      "Expert strategic consulting to drive sustainable growth and long-term business success.",
     features: [
-      "Go-to-Market Strategy",
-      "Business Model Innovation",
-      "Growth Strategy Planning",
-      "Strategic Partnerships",
+      "Go-to-Market Planning & Execution",
+      "Business Model Design & Innovation",
+      "Growth Strategy Development & Execution",
+      "Strategic Alliances & Partnership Development",
     ],
   },
   {
     icon: PieChart,
     title: "Analytics & Insights",
     description:
-      "Turn data into actionable insights with our analytics solutions.",
+      "Transform data into actionable insights with our analytics solutions.",
     features: [
-      "Marketing Analytics Setup",
-      "Performance Dashboards",
-      "ROI Tracking & Reporting",
-      "Customer Journey Analysis",
+      "Marketing Analytics Implementation & Setup",
+      "Custom Performance Dashboards & Reporting Tools",
+      "ROI Measurement, Tracking & Optimization",
+      "Customer Journey Mapping & Analysis",
     ],
   },
 ];
@@ -157,7 +157,7 @@ export default function MarketingStrategyPage() {
       <Header />
       <main>
         {/* Hero Section */}
-        <section className="relative py-20 bg-gradient-to-br from-[#2563eb] to-[#1d4ed8] overflow-hidden">
+        <section className="relative py-40 bg-gradient-to-br from-[#2563eb] to-[#1d4ed8] overflow-hidden">
           <div className="absolute inset-0 opacity-10">
             <div
               className="absolute inset-0"
@@ -174,31 +174,31 @@ export default function MarketingStrategyPage() {
             >
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/20 rounded-full text-white text-sm mb-6">
                 <TrendingUp size={16} />
-                Strategic Growth Partners
+                Full-Spectrum Marketing Solutions
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-6">
                 Marketing & Strategy
               </h1>
               <p className="text-xl text-white/90 max-w-3xl mx-auto mb-8">
-                Drive sustainable business growth with our strategic marketing
-                consultancy. We combine creativity with data to deliver
-                measurable results for your brand.
+                We provide end-to-end marketing solutions, from strategic brand
+                development to targeted digital campaigns, designed to
+                accelerate your business growth.
               </p>
               <div className="flex flex-wrap justify-center gap-4">
                 <Link
                   href="/contact"
                   className="bg-white text-[#2563eb] px-8 py-4 rounded-full font-semibold hover:bg-[#c9a227] hover:text-white transition-colors inline-flex items-center gap-2"
                 >
-                  Get Free Audit
+                  Contact Us
                   <ArrowRight size={18} />
                 </Link>
-                <Link
-                  href="/contact"
+                <a
+                  href="tel:+971561596222"
                   className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white/10 transition-colors inline-flex items-center gap-2"
                 >
                   <Phone size={18} />
-                  Book a Call
-                </Link>
+                  Call Us Now
+                </a>
               </div>
             </motion.div>
           </div>

@@ -97,14 +97,17 @@ export default function WhyChooseUs() {
               Why Choose Us
             </span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-[#0d1b4c] mt-3 mb-6">
-              Excellence Meets
-              <span className="block text-[#0d6d55]">Global Opportunity</span>
+              Where Academic Excellence
+              <span className="block text-[#0d6d55]">
+                Meets Global Opportunity
+              </span>
             </h2>
             <p className="text-gray-600 text-lg leading-relaxed mb-8">
-              At Emirates International College, we combine academic rigor with
-              real-world experience to prepare leaders for the global stage. Our
-              commitment to excellence, innovation, and student success sets us
-              apart.
+              At Emirates International College, we integrate rigorous academic
+              standards with practical industry exposure to prepare future
+              leaders for success in a global marketplace. Our dedication to
+              quality, innovation, and student achievement distinguishes us as a
+              center of excellence.
             </p>
 
             {/* Key Stats */}

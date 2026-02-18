@@ -8,8 +8,6 @@ import {
   Mail,
   Phone,
   GraduationCap,
-  FileText,
-  Upload,
   CheckCircle,
   ArrowRight,
   ArrowLeft,
@@ -21,8 +19,7 @@ import { useState } from "react";
 const steps = [
   { id: 1, title: "Personal Info" },
   { id: 2, title: "Program Selection" },
-  { id: 3, title: "Documents" },
-  { id: 4, title: "Review & Submit" },
+  { id: 3, title: "Review & Submit" },
 ];
 
 const programs = [
@@ -54,13 +51,9 @@ export default function ApplyPage() {
     email: "",
     phone: "",
     country: "",
-    dob: "",
     program: "",
     intake: "",
     education: "",
-    transcript: null as File | null,
-    passport: null as File | null,
-    sop: null as File | null,
   });
 
   const handleInputChange = (
@@ -69,17 +62,8 @@ export default function ApplyPage() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleFileChange = (
-    e: React.ChangeEvent<HTMLInputElement>,
-    field: string,
-  ) => {
-    if (e.target.files && e.target.files[0]) {
-      setFormData({ ...formData, [field]: e.target.files[0] });
-    }
-  };
-
   const nextStep = () => {
-    if (currentStep < 4) setCurrentStep(currentStep + 1);
+    if (currentStep < 3) setCurrentStep(currentStep + 1);
   };
 
   const prevStep = () => {
@@ -156,7 +140,7 @@ export default function ApplyPage() {
       <Header />
       <main className="min-h-screen bg-[#faf9f7]">
         {/* Hero */}
-        <section className="relative py-16 bg-[#0d1b4c]">
+        <section className="relative py-40 bg-[#0d1b4c]">
           <div className="max-w-7xl mx-auto px-4 text-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -334,19 +318,6 @@ export default function ApplyPage() {
                           <option value="other">Other</option>
                         </select>
                       </div>
-                      <div>
-                        <label className="block text-sm font-medium text-gray-700 mb-2">
-                          Date of Birth *
-                        </label>
-                        <input
-                          type="date"
-                          name="dob"
-                          value={formData.dob}
-                          onChange={handleInputChange}
-                          required
-                          className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:border-[#0d6d55] focus:ring-1 focus:ring-[#0d6d55]"
-                        />
-                      </div>
                     </div>
                   </>
                 )}
@@ -426,80 +397,8 @@ export default function ApplyPage() {
                   </>
                 )}
 
-                {/* Step 3: Documents */}
+                {/* Step 3: Review */}
                 {currentStep === 3 && (
-                  <>
-                    <h2 className="text-2xl font-serif font-bold text-[#0d1b4c] mb-6">
-                      Upload Documents
-                    </h2>
-                    <div className="space-y-6">
-                      {[
-                        {
-                          name: "transcript",
-                          label: "Academic Transcript",
-                          required: true,
-                        },
-                        {
-                          name: "passport",
-                          label: "Passport Copy",
-                          required: true,
-                        },
-                        {
-                          name: "sop",
-                          label: "Statement of Purpose",
-                          required: false,
-                        },
-                      ].map((doc) => (
-                        <div key={doc.name}>
-                          <label className="block text-sm font-medium text-gray-700 mb-2">
-                            {doc.label} {doc.required && "*"}
-                          </label>
-                          <div className="border-2 border-dashed border-gray-200 rounded-xl p-6 text-center hover:border-[#0d6d55] transition-colors">
-                            <input
-                              type="file"
-                              id={doc.name}
-                              accept=".pdf,.jpg,.jpeg,.png"
-                              onChange={(e) => handleFileChange(e, doc.name)}
-                              className="hidden"
-                            />
-                            <label
-                              htmlFor={doc.name}
-                              className="cursor-pointer"
-                            >
-                              {formData[doc.name as keyof typeof formData] ? (
-                                <div className="flex items-center justify-center gap-2 text-[#0d6d55]">
-                                  <CheckCircle size={24} />
-                                  <span>
-                                    {
-                                      (
-                                        formData[
-                                          doc.name as keyof typeof formData
-                                        ] as File
-                                      ).name
-                                    }
-                                  </span>
-                                </div>
-                              ) : (
-                                <>
-                                  <Upload className="w-10 h-10 text-gray-400 mx-auto mb-2" />
-                                  <p className="text-gray-600">
-                                    Click to upload or drag and drop
-                                  </p>
-                                  <p className="text-gray-400 text-sm mt-1">
-                                    PDF, JPG, PNG (max 5MB)
-                                  </p>
-                                </>
-                              )}
-                            </label>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  </>
-                )}
-
-                {/* Step 4: Review */}
-                {currentStep === 4 && (
                   <>
                     <h2 className="text-2xl font-serif font-bold text-[#0d1b4c] mb-6">
                       Review Your Application
@@ -557,38 +456,12 @@ export default function ApplyPage() {
                               }
                             </p>
                           </div>
-                        </div>
-                      </div>
-
-                      <div className="bg-[#faf9f7] rounded-xl p-6">
-                        <h3 className="font-semibold text-[#0d1b4c] mb-4">
-                          Documents
-                        </h3>
-                        <div className="space-y-2 text-sm">
-                          {["transcript", "passport", "sop"].map((doc) => (
-                            <div key={doc} className="flex items-center gap-2">
-                              {formData[doc as keyof typeof formData] ? (
-                                <>
-                                  <CheckCircle
-                                    className="text-[#0d6d55]"
-                                    size={16}
-                                  />
-                                  <span className="capitalize">{doc}:</span>
-                                  <span className="font-medium">
-                                    {(
-                                      formData[
-                                        doc as keyof typeof formData
-                                      ] as File
-                                    )?.name || "Not uploaded"}
-                                  </span>
-                                </>
-                              ) : (
-                                <span className="text-gray-400 capitalize">
-                                  {doc}: Not uploaded
-                                </span>
-                              )}
-                            </div>
-                          ))}
+                          <div>
+                            <span className="text-gray-500">Education:</span>
+                            <p className="font-medium capitalize">
+                              {formData.education || "Not specified"}
+                            </p>
+                          </div>
                         </div>
                       </div>
 
@@ -640,7 +513,7 @@ export default function ApplyPage() {
                     <div />
                   )}
 
-                  {currentStep < 4 ? (
+                  {currentStep < 3 ? (
                     <button
                       type="button"
                       onClick={nextStep}

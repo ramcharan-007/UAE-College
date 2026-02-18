@@ -51,22 +51,11 @@ const socialLinks = [
 
 const offices = [
   {
-    location: "Dubai, UAE (Main Campus)",
-    address: "Le Solarium Building, 10th Floor, Dubai Silicon Oasis",
+    location: "Sharjah, UAE (Head Office)",
+    address:
+      "Business Center, Sharjah Publishing City Free Zone, Sharjah, United Arab Emirates",
     phone: "+971 56 159 6222",
-    email: "dubai@emiratesinternational.edu",
-  },
-  {
-    location: "Abu Dhabi, UAE",
-    address: "Al Maryah Island, Abu Dhabi Global Market Square",
-    phone: "+971 2 123 4567",
-    email: "abudhabi@emiratesinternational.edu",
-  },
-  {
-    location: "London, UK",
-    address: "241E High Street North, London, E12 6SJ",
-    phone: "+44 20 7123 4567",
-    email: "london@emiratesinternational.edu",
+    email: "info@icasr.ae",
   },
 ];
 
@@ -91,7 +80,7 @@ export default function Footer() {
                   Emirates International
                 </h3>
                 <p className="text-xs text-white/70 tracking-wider uppercase">
-                  College of Excellence
+                  International Center for Applied Studies & Research
                 </p>
               </div>
             </Link>
@@ -178,30 +167,30 @@ export default function Footer() {
         {/* Office Locations */}
         <div className="mt-16 pt-8 border-t border-white/10">
           <h4 className="font-serif font-bold text-lg mb-8 text-center text-[#c9a227]">
-            Our Global Offices
+            Our Office
           </h4>
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="flex justify-center">
             {offices.map((office) => (
               <div
                 key={office.location}
-                className="p-6 bg-white/5 rounded-xl hover:bg-white/10 transition-colors"
+                className="p-6 bg-white/5 rounded-xl hover:bg-white/10 transition-colors max-w-md text-center"
               >
                 <h5 className="font-semibold mb-3">{office.location}</h5>
                 <div className="space-y-2 text-sm text-white/70">
-                  <p className="flex items-start gap-2">
-                    <MapPin size={16} className="flex-shrink-0 mt-0.5" />
+                  <p className="flex items-center justify-center gap-2">
+                    <MapPin size={16} className="shrink-0" />
                     {office.address}
                   </p>
                   <a
                     href={`tel:${office.phone.replace(/\s/g, "")}`}
-                    className="flex items-center gap-2 hover:text-[#c9a227]"
+                    className="flex items-center justify-center gap-2 hover:text-[#c9a227]"
                   >
                     <Phone size={16} />
                     {office.phone}
                   </a>
                   <a
                     href={`mailto:${office.email}`}
-                    className="flex items-center gap-2 hover:text-[#c9a227]"
+                    className="flex items-center justify-center gap-2 hover:text-[#c9a227]"
                   >
                     <Mail size={16} />
                     {office.email}

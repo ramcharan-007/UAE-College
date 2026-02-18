@@ -1,5 +1,5 @@
 import { redirect } from "next/navigation";
 
-export default function BlogPage() {
+export default function PrivacyPage() {
   redirect("/coming-soon");
 }

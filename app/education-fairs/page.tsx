@@ -24,49 +24,45 @@ const upcomingEvents = [
   {
     id: 1,
     title: "Dubai International Education Fair 2026",
-    date: "March 15-16, 2026",
+    date: "May 18-19, 2026",
     location: "Dubai World Trade Centre",
     universities: "100+",
     countries: "25+",
-    image:
-      "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&q=80",
-    status: "Registration Open",
+    image: "/images/Fair-Event_UAE.jpg",
+    status: "Upcoming Event",
     featured: true,
   },
   {
     id: 2,
     title: "Abu Dhabi Study Abroad Expo",
-    date: "April 22-23, 2026",
+    date: "June 22-23, 2026",
     location: "ADNEC Abu Dhabi",
     universities: "75+",
     countries: "20+",
-    image:
-      "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=600&q=80",
-    status: "Coming Soon",
+    image: "/images/Fair-Event_KSA.jpg",
+    status: "Upcoming Event",
     featured: false,
   },
   {
     id: 3,
     title: "Hyderabad Education Connect",
-    date: "May 10-11, 2026",
+    date: "July 10-11, 2026",
     location: "HICC Hyderabad",
     universities: "60+",
     countries: "15+",
-    image:
-      "https://images.unsplash.com/photo-1511578314322-379afb476865?w=600&q=80",
-    status: "Coming Soon",
+    image: "/images/Fair-Event_Hydrebad.jpg",
+    status: "Upcoming Event",
     featured: false,
   },
   {
     id: 4,
     title: "London UK Universities Fair",
-    date: "June 5-6, 2026",
+    date: "August 5-6, 2026",
     location: "ExCeL London",
     universities: "50+",
     countries: "UK Focus",
-    image:
-      "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=600&q=80",
-    status: "Coming Soon",
+    image: "/images/Fair-Event_UK.jpg",
+    status: "Upcoming Event",
     featured: false,
   },
 ];
@@ -154,7 +150,7 @@ export default function EducationFairsPage() {
       <Header />
       <main>
         {/* Hero Section */}
-        <section className="relative py-20 bg-gradient-to-br from-[#7c3aed] to-[#6d28d9] overflow-hidden">
+        <section className="relative py-40 bg-gradient-to-br from-[#7c3aed] to-[#6d28d9] overflow-hidden">
           <div className="absolute inset-0 opacity-10">
             <div
               className="absolute inset-0"
@@ -190,11 +186,11 @@ export default function EducationFairsPage() {
                   <ArrowRight size={18} />
                 </Link>
                 <Link
-                  href="/register"
+                  href="/contact"
                   className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white/10 transition-colors inline-flex items-center gap-2"
                 >
                   <Ticket size={18} />
-                  Register Free
+                  Contact Us
                 </Link>
               </div>
             </motion.div>

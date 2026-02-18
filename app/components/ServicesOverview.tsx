@@ -20,14 +20,14 @@ const services = [
     id: "online-courses",
     icon: BookOpen,
     title: "Online Courses",
-    subtitle: "Learn Anywhere, Anytime",
+    subtitle: "Access Education at Your Convenience",
     description:
-      "Access 50+ globally accredited online courses designed for working professionals and students. Earn recognized qualifications from the comfort of your home.",
+      "Access 50+ globally accredited online courses tailored for students and working professionals. Gain recognized qualifications from the comfort of your home while advancing your career.",
     highlights: [
       "UK & International Accreditation",
-      "Flexible Self-Paced Learning",
-      "Industry-Expert Instructors",
-      "Career Support & Placement",
+      "Flexible, Self-Paced and Structured Learning Options",
+      "Guidance from Industry-Expert Instructors",
+      "Dedicated Career Advisory & Placement Assistance",
     ],
     stats: { value: "50+", label: "Courses Available" },
     href: "/online-courses",
@@ -122,11 +122,12 @@ export default function ServicesOverview() {
             Our Services
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-[#0d1b4c] mt-3 mb-4">
-            Comprehensive Solutions for Your Success
+            Integrated Pathways to Academic and Professional Excellence
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-            From education to workforce development, we provide end-to-end
-            solutions to help individuals and organizations achieve their goals.
+          <p className="text-gray-600 max-w-3xl mx-auto text-lg">
+            Advance your career with internationally recognized online programs,
+            professional HR solutions, strategic marketing services, and premier
+            international education events designed to expand your global reach.
           </p>
         </motion.div>
 

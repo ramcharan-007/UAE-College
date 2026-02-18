@@ -12,8 +12,7 @@ const newsItems = [
       "Spring 2026 Admissions Now Open - Early Bird Scholarships Available",
     excerpt:
       "Apply now for Spring 2026 intake and receive up to 30% scholarship on tuition fees. Limited seats available for international students.",
-    image:
-      "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&h=400&fit=crop",
+    image: "/images/Courses_1.jpg",
     date: "Jan 28, 2026",
     author: "Admissions Office",
     readTime: "3 min read",
@@ -24,8 +23,7 @@ const newsItems = [
     title: "Annual Career Fair 2026 - Connect with 100+ Global Employers",
     excerpt:
       "Join us for the biggest career fair in the region featuring Fortune 500 companies, startups, and government organizations.",
-    image:
-      "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&h=400&fit=crop",
+    image: "/images/Fair-Event_UAE.jpg",
     date: "Jan 25, 2026",
     author: "Career Services",
     readTime: "4 min read",
@@ -36,8 +34,7 @@ const newsItems = [
     title: "EIC Ranked Among Top 50 Universities in Middle East",
     excerpt:
       "Emirates International College achieves prestigious ranking in the latest QS Middle East University Rankings for 2026.",
-    image:
-      "https://images.unsplash.com/photo-1562774053-701939374585?w=600&h=400&fit=crop",
+    image: "/images/About_Story-01.jpg",
     date: "Jan 20, 2026",
     author: "Communications",
     readTime: "5 min read",
@@ -48,8 +45,7 @@ const newsItems = [
     title: "New AI Research Lab Launched in Partnership with Tech Giants",
     excerpt:
       "State-of-the-art artificial intelligence research facility opens, backed by leading technology companies.",
-    image:
-      "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop",
+    image: "/images/Courses_4.jpg",
     date: "Jan 15, 2026",
     author: "Research Department",
     readTime: "6 min read",

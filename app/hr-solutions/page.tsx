@@ -24,74 +24,74 @@ import {
 const services = [
   {
     icon: Users,
-    title: "Talent Acquisition",
+    title: "Talent Acquisition/Onboarding Support",
     description:
-      "End-to-end recruitment solutions from sourcing to onboarding. We find the right talent that fits your organizational culture and goals.",
+      "Comprehensive recruitment solutions designed to identify, attract, and onboard high-quality professionals who align with your organization's culture, vision, and long-term objectives.",
     features: [
-      "Executive Search & Headhunting",
-      "Mass Recruitment Campaigns",
-      "Campus Hiring Programs",
-      "Contract & Temporary Staffing",
+      "C-Suite Recruitment",
+      "Large-Scale Talent Acquisition",
+      "Career Fair Recruitment Support/Campus Hiring Programs",
+      "Contract & Temporary Resource Allocation",
     ],
   },
   {
     icon: FileText,
-    title: "Payroll Management",
+    title: "Managed Payroll Solutions",
     description:
-      "Comprehensive payroll processing and compliance management tailored for UAE labor laws and regulations.",
+      "Comprehensive payroll solutions aligned with UAE Labour Law and regulations.",
     features: [
-      "Salary Processing & Disbursement",
-      "WPS Compliance Management",
-      "Leave & Benefits Administration",
-      "Tax Documentation & Reporting",
+      "Payroll Disbursement Services",
+      "WPS Regulatory Administration",
+      "Leave and Benefit Policy Administration",
+      "Tax Compliance Documentation & Reporting",
     ],
   },
   {
     icon: GraduationCap,
-    title: "Training & Development",
+    title: "Employee Upskilling Initiatives",
     description:
-      "Customized learning programs to upskill your workforce and drive organizational performance.",
+      "Focused learning pathways that help employees acquire new skills, adapt to evolving industry demands, and maintain competitive advantage.",
     features: [
-      "Leadership Development Programs",
-      "Technical Skills Training",
-      "Soft Skills Workshops",
-      "E-Learning Solutions",
+      "Emerging Leaders Programs",
+      "Core Skills Enhancement/Advanced Technical Training",
+      "Professional Skills Workshops/Interpersonal Skills Development",
+      "Microlearning Solutions/E-Learning Solutions",
     ],
   },
   {
     icon: Target,
     title: "HR Consulting",
     description:
-      "Strategic HR advisory services to optimize your human capital and organizational structure.",
+      "Strategic advisory services designed to strengthen workforce effectiveness and align human resources with organizational goals.",
     features: [
-      "HR Policy Development",
-      "Performance Management Systems",
+      "HR Policy Framework Design/HR Policy Development",
+      "Competency Mapping",
       "Compensation & Benefits Strategy",
       "Organizational Design",
     ],
   },
   {
     icon: Shield,
-    title: "Compliance & Legal",
+    title: "Regulatory Compliance",
     description:
-      "Ensure your organization stays compliant with UAE labor laws and international regulations.",
+      "Ensure organizational adherence to UAE labor laws and applicable international regulations through structured compliance frameworks.",
     features: [
-      "Employment Contract Management",
-      "Visa & Work Permit Processing",
-      "Labor Dispute Resolution",
-      "HR Audit & Risk Assessment",
+      "Employment Contract Administration",
+      "Immigration & Work Authorization Support",
+      "Workplace Dispute Management",
+      "HR Compliance Audits",
     ],
   },
   {
     icon: Building2,
     title: "HR Outsourcing",
     description:
-      "Complete HR function outsourcing allowing you to focus on your core business operations.",
+      "Comprehensive management of HR functions that enables organizations to concentrate on core business priorities.",
     features: [
-      "Full HR Department Outsourcing",
-      "Specific Function Outsourcing",
-      "HR Shared Services",
-      "Employee Helpdesk Management",
+      "Comprehensive HR Outsourcing",
+      "Functional HR Outsourcing",
+      "Centralized HR Services",
+      "Employee Support Desk",
     ],
   },
 ];
@@ -129,7 +129,7 @@ export default function HRSolutionsPage() {
       <Header />
       <main>
         {/* Hero Section */}
-        <section className="relative py-20 bg-gradient-to-br from-[#c9a227] to-[#a88820] overflow-hidden">
+        <section className="relative py-40 bg-gradient-to-br from-[#c9a227] to-[#a88820] overflow-hidden">
           <div className="absolute inset-0 opacity-10">
             <div
               className="absolute inset-0"
@@ -146,22 +146,21 @@ export default function HRSolutionsPage() {
             >
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/20 rounded-full text-white text-sm mb-6">
                 <Users size={16} />
-                Complete Workforce Solutions
+                Smart HR Solutions for Growing Businesses
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-6">
                 HR Solutions
               </h1>
               <p className="text-xl text-white/90 max-w-3xl mx-auto mb-8">
-                Comprehensive human resources services tailored for UAE
-                businesses. From talent acquisition to payroll management, we
-                handle your HR needs so you can focus on growth.
+                From recruitment to retirement, we empower organizations with
+                strategic, end-to-end HR solutions built for long-term success.
               </p>
               <div className="flex flex-wrap justify-center gap-4">
                 <Link
                   href="/contact"
-                  className="bg-[#0d1b4c] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#0d1b4c]/90 transition-colors inline-flex items-center gap-2"
+                  className="bg-[#fff] text-[#c9a227] px-8 py-4 rounded-full font-semibold hover:bg-[#0d1b4c]/90 transition-colors inline-flex items-center gap-2"
                 >
-                  Get a Quote
+                  Contact Us
                   <ArrowRight size={18} />
                 </Link>
                 <a
@@ -211,11 +210,11 @@ export default function HRSolutionsPage() {
                 Our Services
               </span>
               <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#0d1b4c] mt-3 mb-4">
-                Complete HR Service Portfolio
+                Smart HR Solutions for Growing Businesses
               </h2>
               <p className="text-gray-600 max-w-2xl mx-auto">
-                From recruitment to retirement, we provide end-to-end HR
-                solutions for organizations of all sizes.
+                From recruitment to retirement, we provide seamless, end-to-end
+                HR solutions designed to help organizations grow and succeed.
               </p>
             </motion.div>
 
@@ -274,10 +273,10 @@ export default function HRSolutionsPage() {
                   Serving Diverse Industries
                 </h2>
                 <p className="text-gray-600 mb-8">
-                  With over 15 years of experience, we understand the unique HR
-                  challenges across different sectors. Our industry-specific
-                  solutions ensure you get talent and services tailored to your
-                  business needs.
+                  With over 15 years of experience, we have deep insight into
+                  sector-specific HR complexities. Our tailored solutions
+                  deliver talent and services precisely aligned with your
+                  organizational requirements.
                 </p>
                 <div className="grid grid-cols-2 gap-4">
                   {industries.map((industry) => (

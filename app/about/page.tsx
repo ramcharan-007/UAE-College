@@ -131,12 +131,12 @@ export default function AboutPage() {
       <Header />
       <main>
         {/* Hero Section */}
-        <section className="relative py-20 bg-[#0d1b4c] overflow-hidden">
+        <section className="relative py-40 bg-[#0d1b4c] overflow-hidden">
           <div className="absolute inset-0">
             <div
-              className="absolute inset-0 bg-cover bg-center opacity-20"
+              className="absolute inset-0 bg-cover bg-center opacity-30"
               style={{
-                backgroundImage: `url('https://images.unsplash.com/photo-1562774053-701939374585?w=2000&q=80')`,
+                backgroundImage: `url('/images/About_Hero.jpg')`,
               }}
             />
           </div>
@@ -166,46 +166,53 @@ export default function AboutPage() {
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <motion.div
                 initial={{ opacity: 0, x: -30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
               >
                 <span className="text-[#c9a227] font-semibold text-sm tracking-wider uppercase">
                   Our Story
                 </span>
                 <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#0d1b4c] mt-3 mb-6">
-                  A Legacy of Excellence
+                  Proven Excellence
                 </h2>
                 <div className="space-y-4 text-gray-600 leading-relaxed">
                   <p>
-                    Emirates International College began with a vision—to bridge
-                    the gap between traditional education and modern career
-                    demands. What started as a mission to provide accessible,
-                    high-quality learning has evolved into a platform where
-                    ambition meets opportunity.
+                    Emirates International College was established with a
+                    forward-thinking purpose—to connect academic learning with
+                    real-world career opportunities. From the beginning, our
+                    focus has been on making quality education accessible,
+                    relevant, and aligned with the needs of today&apos;s
+                    industries.
                   </p>
                   <p>
-                    From our early days, we've believed in more than just
-                    textbooks—we believe in transformation. Our journey has been
-                    shaped by innovative educators, industry-aligned programmes,
-                    and a diverse student community that inspires us daily.
+                    We believe education is more than the transfer of knowledge;
+                    it is a journey of growth and transformation. Through
+                    experienced educators, industry-relevant programmes, and a
+                    supportive learning environment, we empower students to
+                    develop the skills, confidence, and mindset needed to
+                    succeed in a competitive global landscape.
                   </p>
                   <p>
-                    Rooted in excellence and driven by progress, we continue to
-                    grow—adapting to global trends, embracing digital learning,
-                    and nurturing every learner's potential.
+                    Guided by innovation and driven by progress, Emirates
+                    International College continues to evolve with changing
+                    global trends. By embracing digital learning and practical
+                    approaches to education, we are committed to nurturing every
+                    learner&apos;s potential and helping them build meaningful,
+                    successful futures.
                   </p>
                 </div>
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, x: 30 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: 0.4 }}
                 viewport={{ once: true }}
                 className="relative"
               >
                 <img
-                  src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=600&h=400&fit=crop"
+                  src="/images/About_Story-01.jpg"
                   alt="Campus"
-                  className="rounded-2xl shadow-xl"
+                  className="rounded-2xl shadow-xl w-full h-auto object-cover"
                 />
                 <div className="absolute -bottom-6 -left-6 bg-[#c9a227] rounded-xl p-6 text-[#0d1b4c]">
                   <div className="text-4xl font-bold">25+</div>
@@ -233,10 +240,11 @@ export default function AboutPage() {
                   Our Vision
                 </h3>
                 <p className="text-white/80 leading-relaxed">
-                  To be a globally recognized center of academic excellence,
-                  innovation, and research, producing leaders who shape the
-                  future of business, technology, and society across the Middle
-                  East and beyond.
+                  To become a globally respected institution that delivers
+                  innovative, career-focused education, empowering future
+                  leaders to excel in business, technology, and emerging
+                  industries while making a meaningful impact on society locally
+                  and internationally.
                 </p>
               </motion.div>
               <motion.div
@@ -253,10 +261,11 @@ export default function AboutPage() {
                   Our Mission
                 </h3>
                 <p className="text-white/80 leading-relaxed">
-                  To provide transformative education that combines academic
-                  rigor with practical experience, fostering critical thinking,
-                  creativity, and ethical leadership in a diverse and inclusive
-                  learning environment.
+                  To deliver high-quality, career-oriented education that blends
+                  strong academic foundations with real-world learning,
+                  empowering students to think critically, innovate confidently,
+                  and lead responsibly in a global and inclusive learning
+                  community.
                 </p>
               </motion.div>
             </div>
@@ -296,105 +305,6 @@ export default function AboutPage() {
                     {value.title}
                   </h3>
                   <p className="text-gray-600">{value.description}</p>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Timeline */}
-        <section className="py-20 bg-[#0d1b4c]">
-          <div className="max-w-7xl mx-auto px-4">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="text-center mb-16"
-            >
-              <span className="text-[#c9a227] font-semibold text-sm tracking-wider uppercase">
-                Our Journey
-              </span>
-              <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mt-3">
-                Key Milestones
-              </h2>
-            </motion.div>
-            <div className="relative">
-              <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-[#c9a227]/30 hidden md:block" />
-              <div className="space-y-8">
-                {milestones.map((milestone, index) => (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, x: index % 2 === 0 ? -30 : 30 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    className={`flex items-center gap-8 ${
-                      index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-                    }`}
-                  >
-                    <div
-                      className={`flex-1 ${index % 2 === 0 ? "md:text-right" : ""}`}
-                    >
-                      <div className="bg-white/10 rounded-xl p-6">
-                        <span className="text-[#c9a227] font-bold text-lg">
-                          {milestone.year}
-                        </span>
-                        <h3 className="text-white font-semibold text-xl mt-1">
-                          {milestone.title}
-                        </h3>
-                        <p className="text-white/70 mt-2">
-                          {milestone.description}
-                        </p>
-                      </div>
-                    </div>
-                    <div className="hidden md:flex w-4 h-4 bg-[#c9a227] rounded-full border-4 border-[#0d1b4c]" />
-                    <div className="flex-1 hidden md:block" />
-                  </motion.div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Leadership */}
-        <section id="leadership" className="py-20 bg-white">
-          <div className="max-w-7xl mx-auto px-4">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="text-center mb-16"
-            >
-              <span className="text-[#c9a227] font-semibold text-sm tracking-wider uppercase">
-                Meet Our Team
-              </span>
-              <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#0d1b4c] mt-3">
-                Leadership
-              </h2>
-            </motion.div>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {leadership.map((leader, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.1 }}
-                  className="group"
-                >
-                  <div className="relative overflow-hidden rounded-2xl mb-4">
-                    <img
-                      src={leader.image}
-                      alt={leader.name}
-                      className="w-full aspect-square object-cover group-hover:scale-110 transition-transform duration-500"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b4c] to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
-                      <p className="text-white text-sm">{leader.bio}</p>
-                    </div>
-                  </div>
-                  <h3 className="font-serif font-bold text-[#0d1b4c]">
-                    {leader.name}
-                  </h3>
-                  <p className="text-[#0d6d55] text-sm">{leader.role}</p>
                 </motion.div>
               ))}
             </div>
@@ -442,79 +352,6 @@ export default function AboutPage() {
                     <p className="text-gray-600 text-sm">
                       {accreditation.description}
                     </p>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Campus Section */}
-        <section id="campus" className="py-20 bg-white">
-          <div className="max-w-7xl mx-auto px-4">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="text-center mb-16"
-            >
-              <span className="text-[#c9a227] font-semibold text-sm tracking-wider uppercase">
-                World-Class Facilities
-              </span>
-              <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#0d1b4c] mt-3">
-                Our Campus
-              </h2>
-            </motion.div>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {[
-                {
-                  title: "Smart Classrooms",
-                  image:
-                    "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=400&h=300&fit=crop",
-                },
-                {
-                  title: "Research Labs",
-                  image:
-                    "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=400&h=300&fit=crop",
-                },
-                {
-                  title: "Library",
-                  image:
-                    "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=400&h=300&fit=crop",
-                },
-                {
-                  title: "Sports Complex",
-                  image:
-                    "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=400&h=300&fit=crop",
-                },
-                {
-                  title: "Student Lounge",
-                  image:
-                    "https://images.unsplash.com/photo-1497366216548-37526070297c?w=400&h=300&fit=crop",
-                },
-                {
-                  title: "Cafeteria",
-                  image:
-                    "https://images.unsplash.com/photo-1567521464027-f127ff144326?w=400&h=300&fit=crop",
-                },
-              ].map((facility, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.1 }}
-                  className="relative group overflow-hidden rounded-2xl"
-                >
-                  <img
-                    src={facility.image}
-                    alt={facility.title}
-                    className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b4c] to-transparent flex items-end p-6">
-                    <h3 className="text-white font-semibold text-lg">
-                      {facility.title}
-                    </h3>
                   </div>
                 </motion.div>
               ))}

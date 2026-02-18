@@ -67,23 +67,23 @@ export default function Header() {
       >
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
           <div className="flex items-center gap-6">
-            <a
+            {/* <a
               href="tel:+971561596222"
               className="flex items-center gap-2 hover:text-[#c9a227] transition-colors"
             >
               <Phone size={14} />
               <span>+971 56 159 6222</span>
-            </a>
+            </a> */}
             <a
-              href="mailto:info@emiratesinternational.edu"
+              href="mailto:info@icasr.ae"
               className="flex items-center gap-2 hover:text-[#c9a227] transition-colors"
             >
               <Mail size={14} />
-              <span>info@emiratesinternational.edu</span>
+              <span>info@icasr.ae</span>
             </a>
             <span className="flex items-center gap-2">
               <MapPin size={14} />
-              <span>Dubai, UAE</span>
+              <span>Sharjah, UAE</span>
             </span>
           </div>
           <div className="flex items-center gap-4">
@@ -92,12 +92,12 @@ export default function Header() {
               <span>EN</span>
               <ChevronDown size={12} />
             </button>
-            <Link
+            {/* <Link
               href="/login"
               className="hover:text-[#c9a227] transition-colors"
             >
               Student Portal
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>
@@ -136,7 +136,7 @@ export default function Header() {
                     isScrolled ? "text-[#0d6d55]" : "text-white/80"
                   }`}
                 >
-                  College of Excellence
+                  International Center for Applied Studies & Research
                 </p>
               </div>
             </Link>
@@ -145,7 +145,7 @@ export default function Header() {
             <nav className="hidden lg:flex items-center gap-1">
               <Link
                 href="/"
-                className={`px-4 py-2 transition-colors font-medium ${
+                className={`px-4 py-2 transition-colors font-medium whitespace-nowrap ${
                   isScrolled
                     ? "text-[#2d2d2d] hover:text-[#0d6d55]"
                     : "text-white hover:text-[#c9a227]"
@@ -158,7 +158,7 @@ export default function Header() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className={`px-3 py-2 transition-colors font-medium flex items-center gap-1.5 text-sm ${
+                  className={`px-3 py-2 transition-colors font-medium flex items-center gap-1.5 text-sm whitespace-nowrap ${
                     isScrolled
                       ? "text-[#2d2d2d] hover:text-[#0d6d55]"
                       : "text-white hover:text-[#c9a227]"
@@ -196,7 +196,7 @@ export default function Header() {
             <div className="hidden lg:flex items-center gap-3">
               <Link
                 href="/apply"
-                className={`px-6 py-2.5 rounded-full text-sm font-semibold transition-all ${
+                className={`px-6 py-2.5 rounded-full whitespace-nowrap text-sm font-semibold transition-all ${
                   isScrolled
                     ? "btn-primary"
                     : "bg-white text-[#0d1b4c] hover:bg-[#c9a227] hover:text-white"

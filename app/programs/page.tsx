@@ -237,9 +237,9 @@ export default function ProgramsPage() {
         <section className="relative py-20 bg-[#0d1b4c] overflow-hidden">
           <div className="absolute inset-0">
             <div
-              className="absolute inset-0 bg-cover bg-center opacity-20"
+              className="absolute inset-0 bg-cover bg-center opacity-30"
               style={{
-                backgroundImage: `url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=2000&q=80')`,
+                backgroundImage: `url('/images/Hero Page-02.jpg')`,
               }}
             />
           </div>

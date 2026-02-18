@@ -20,44 +20,21 @@ import { useState } from "react";
 
 const offices = [
   {
-    location: "Dubai, UAE (Main Campus)",
+    location: "Sharjah, UAE (Head Office)",
     address:
-      "Le Solarium Building, 10th Floor, 1017, Dubai Silicon Oasis, Dubai, UAE",
+      "Business Center, Sharjah Publishing City Free Zone, Sharjah, United Arab Emirates",
     phone: "+971 56 159 6222",
-    email: "dubai@emiratesinternational.edu",
+    email: "info@icasr.ae",
     hours: "Sun - Thu: 9:00 AM - 6:00 PM",
-  },
-  {
-    location: "Abu Dhabi, UAE",
-    address:
-      "Al Maryah Island, Abu Dhabi Global Market Square, Tower 2, Office 1204",
-    phone: "+971 2 123 4567",
-    email: "abudhabi@emiratesinternational.edu",
-    hours: "Sun - Thu: 9:00 AM - 6:00 PM",
-  },
-  {
-    location: "London, UK",
-    address: "241E High Street North, London, United Kingdom, E12 6SJ",
-    phone: "+44 20 7123 4567",
-    email: "london@emiratesinternational.edu",
-    hours: "Mon - Fri: 9:00 AM - 5:00 PM GMT",
-  },
-  {
-    location: "Hyderabad, India",
-    address:
-      "17-1-16/A, 6th Floor Pinnacle Towers, Santosh Nagar, Saidabad, Hyderabad-500059",
-    phone: "+91 888 551 4426",
-    email: "india@emiratesinternational.edu",
-    hours: "Mon - Sat: 10:00 AM - 7:00 PM IST",
   },
 ];
 
 const departments = [
-  { name: "General Inquiries", email: "info@emiratesinternational.edu" },
-  { name: "Admissions", email: "admissions@emiratesinternational.edu" },
-  { name: "Student Affairs", email: "students@emiratesinternational.edu" },
-  { name: "Finance & Fees", email: "finance@emiratesinternational.edu" },
-  { name: "Career Services", email: "careers@emiratesinternational.edu" },
+  { name: "General Inquiries", email: "info@icasr.ae" },
+  { name: "Admissions", email: "info@icasr.ae" },
+  { name: "Student Affairs", email: "info@icasr.ae" },
+  { name: "Finance & Fees", email: "info@icasr.ae" },
+  { name: "Career Services", email: "info@icasr.ae" },
 ];
 
 const socialLinks = [
@@ -101,7 +78,7 @@ export default function ContactPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="relative py-20 bg-[#0d1b4c]">
+        <section className="relative py-40 bg-[#0d1b4c]">
           <div className="max-w-7xl mx-auto px-4 text-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -128,8 +105,8 @@ export default function ContactPage() {
               {/* Contact Form */}
               <motion.div
                 initial={{ opacity: 0, x: -30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
                 className="lg:col-span-2"
               >
                 <div className="bg-white rounded-2xl shadow-lg p-8">
@@ -303,8 +280,8 @@ export default function ContactPage() {
               {/* Contact Info Sidebar */}
               <motion.div
                 initial={{ opacity: 0, x: 30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: 0.3 }}
                 className="lg:col-span-1 space-y-6"
               >
                 {/* Quick Contact */}
@@ -326,7 +303,7 @@ export default function ContactPage() {
                       </div>
                     </a>
                     <a
-                      href="mailto:info@emiratesinternational.edu"
+                      href="mailto:info@icasr.ae"
                       className="flex items-center gap-3 hover:text-[#c9a227] transition-colors"
                     >
                       <div className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center">
@@ -334,9 +311,7 @@ export default function ContactPage() {
                       </div>
                       <div>
                         <div className="text-sm text-white/70">Email Us</div>
-                        <div className="font-medium">
-                          info@emiratesinternational.edu
-                        </div>
+                        <div className="font-medium">info@icasr.ae</div>
                       </div>
                     </a>
                     <div className="flex items-center gap-3">
@@ -413,11 +388,11 @@ export default function ContactPage() {
                 Visit Us
               </span>
               <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#0d1b4c] mt-3">
-                Our Global Offices
+                Our Office
               </h2>
             </motion.div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="flex justify-center">
               {offices.map((office, index) => (
                 <motion.div
                   key={index}
@@ -425,34 +400,31 @@ export default function ContactPage() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}
-                  className="bg-[#faf9f7] rounded-2xl p-6 hover:shadow-lg transition-shadow"
+                  className="bg-[#faf9f7] rounded-2xl p-8 hover:shadow-lg transition-shadow max-w-md text-center"
                 >
                   <h3 className="font-serif font-bold text-[#0d1b4c] mb-4">
                     {office.location}
                   </h3>
                   <div className="space-y-3 text-sm">
-                    <div className="flex items-start gap-3">
-                      <MapPin
-                        size={16}
-                        className="text-[#0d6d55] flex-shrink-0 mt-0.5"
-                      />
+                    <div className="flex items-center justify-center gap-3">
+                      <MapPin size={16} className="text-[#0d6d55] shrink-0" />
                       <span className="text-gray-600">{office.address}</span>
                     </div>
                     <a
                       href={`tel:${office.phone.replace(/\s/g, "")}`}
-                      className="flex items-center gap-3 text-gray-600 hover:text-[#0d6d55]"
+                      className="flex items-center justify-center gap-3 text-gray-600 hover:text-[#0d6d55]"
                     >
                       <Phone size={16} className="text-[#0d6d55]" />
                       {office.phone}
                     </a>
                     <a
                       href={`mailto:${office.email}`}
-                      className="flex items-center gap-3 text-gray-600 hover:text-[#0d6d55]"
+                      className="flex items-center justify-center gap-3 text-gray-600 hover:text-[#0d6d55]"
                     >
                       <Mail size={16} className="text-[#0d6d55]" />
                       {office.email}
                     </a>
-                    <div className="flex items-center gap-3">
+                    <div className="flex items-center justify-center gap-3">
                       <Clock size={16} className="text-[#0d6d55]" />
                       <span className="text-gray-600">{office.hours}</span>
                     </div>

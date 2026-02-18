@@ -57,7 +57,7 @@ export default function Hero() {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2086&q=80')`,
+          backgroundImage: `url('/images/Hero Page-01.jpg')`,
         }}
       />
 
@@ -67,7 +67,7 @@ export default function Hero() {
       {/* Bottom Gradient for Stats Section */}
       <div className="absolute bottom-0 left-0 w-full h-1/4 bg-gradient-to-t from-[#0d1b4c] to-transparent" />
 
-      <div className="relative max-w-7xl mx-auto px-4 pt-32 pb-20">
+      <div className="relative max-w-7xl mx-auto px-4 pt-40 pb-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <motion.div
@@ -77,19 +77,20 @@ export default function Hero() {
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-white/90 text-sm mb-6">
               <span className="w-2 h-2 bg-[#c9a227] rounded-full animate-pulse" />
-              UAE&apos;s Premier Education & HR Solutions Provider
+              UAE&apos;s Premier Education & Professional Services Provider
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white leading-tight mb-6">
-              Empowering Futures <br />
-              <span className="text-[#c9a227]">Through Education</span> <br />&
-              Excellence
+              International Center for <br />
+              <span className="text-[#c9a227]">Applied Studies</span> <br />&
+              Research
             </h1>
 
             <p className="text-lg text-white/80 mb-8 max-w-xl">
-              Transform your career with globally accredited online courses,
-              strategic HR solutions, marketing expertise, and world-class
-              education fairs connecting you to opportunities worldwide.
+              Advance your career with globally accredited online courses,
+              strategic HR solutions, marketing expertise, and premier
+              international education events designed to expand your global
+              reach.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-10">

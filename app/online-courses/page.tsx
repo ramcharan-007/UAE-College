@@ -10,7 +10,6 @@ import {
   Globe,
   Award,
   Users,
-  Play,
   CheckCircle,
   ArrowRight,
   Star,
@@ -20,148 +19,206 @@ import {
 } from "lucide-react";
 
 const courseCategories = [
-  { name: "All Courses", count: 50 },
-  { name: "Business & Management", count: 15 },
-  { name: "Information Technology", count: 12 },
-  { name: "Healthcare", count: 8 },
-  { name: "Engineering", count: 7 },
-  { name: "Hospitality", count: 5 },
-  { name: "Arts & Design", count: 3 },
+  { name: "All Courses", count: 159 },
+  { name: "Medical", count: 85 },
+  { name: "IT & Analytics", count: 33 },
+  { name: "Management & Entrepreneurship", count: 11 },
+  { name: "Agribusiness Management", count: 7 },
+  { name: "Banking Finance & Insurance", count: 6 },
+  { name: "Tourism & Hospitality", count: 6 },
+  { name: "Sports & Fitness Management", count: 4 },
+  { name: "Creative Arts & Design", count: 3 },
+  { name: "Media & Entertainment", count: 2 },
+  { name: "Beauty & Wellness", count: 2 },
 ];
 
 const courses = [
   {
     id: 1,
-    title: "MBA - Master of Business Administration",
-    category: "Business & Management",
-    duration: "18 Months",
+    title: "Artificial Intelligence And Machine Learning",
+    category: "IT & Analytics",
+    duration: "6 Months",
     mode: "Online",
-    level: "Postgraduate",
+    level: "Certificate",
     accreditation: "UK Accredited",
-    price: "AED 25,000",
+    price: "Contact Us",
     rating: 4.9,
     students: 2500,
-    image:
-      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80",
+    image: "/images/Courses_1.jpg",
     featured: true,
+    description:
+      "Learn AI & ML from scratch with Python, real projects, and expert support. Gain job-ready skills and a UK-recognised certificate—fully online.",
   },
   {
     id: 2,
-    title: "Diploma in Project Management",
-    category: "Business & Management",
-    duration: "6 Months",
-    mode: "Online",
-    level: "Diploma",
-    accreditation: "CPD Certified",
-    price: "AED 8,500",
-    rating: 4.8,
-    students: 1800,
-    image:
-      "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&q=80",
-    featured: true,
-  },
-  {
-    id: 3,
-    title: "BSc in Computer Science",
-    category: "Information Technology",
-    duration: "36 Months",
-    mode: "Blended",
-    level: "Undergraduate",
-    accreditation: "UK Accredited",
-    price: "AED 45,000",
-    rating: 4.7,
-    students: 1200,
-    image:
-      "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&q=80",
-    featured: true,
-  },
-  {
-    id: 4,
-    title: "Certificate in Digital Marketing",
-    category: "Business & Management",
+    title: "Digital Marketing & E-Commerce Fundamentals",
+    category: "IT & Analytics",
     duration: "3 Months",
     mode: "Online",
     level: "Certificate",
-    accreditation: "Google Partner",
-    price: "AED 4,500",
-    rating: 4.9,
+    accreditation: "UK Accredited",
+    price: "Contact Us",
+    rating: 4.8,
     students: 3200,
-    image:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80",
-    featured: false,
+    image: "/images/Courses_2.jpg",
+    featured: true,
+    description:
+      "Master digital marketing & e-commerce. Build your store, run campaigns, and earn a UK-recognised certificate online.",
+  },
+  {
+    id: 3,
+    title: "Business Intelligence & Analytics",
+    category: "IT & Analytics",
+    duration: "4 Months",
+    mode: "Online",
+    level: "Certificate",
+    accreditation: "UK Accredited",
+    price: "Contact Us",
+    rating: 4.7,
+    students: 1800,
+    image: "/images/Courses_3.jpg",
+    featured: true,
+    description:
+      "Master BI & analytics with Power BI, Tableau, and ML. Build dashboards, analyse data, and earn a UK-recognised certificate—fully online.",
+  },
+  {
+    id: 4,
+    title: "Cyber Security",
+    category: "IT & Analytics",
+    duration: "6 Months",
+    mode: "Online",
+    level: "Certificate",
+    accreditation: "UK Accredited",
+    price: "Contact Us",
+    rating: 4.9,
+    students: 1500,
+    image: "/images/Courses_4.jpg",
+    featured: true,
+    description:
+      "Start your cyber security journey—learn to defend systems, detect threats & respond to attacks. 100% online, beginner-friendly, UK-certified.",
   },
   {
     id: 5,
-    title: "Diploma in Healthcare Management",
-    category: "Healthcare",
-    duration: "12 Months",
+    title: "Project Management",
+    category: "Management & Entrepreneurship",
+    duration: "4 Months",
     mode: "Online",
     level: "Diploma",
     accreditation: "UK Accredited",
-    price: "AED 12,000",
+    price: "Contact Us",
     rating: 4.8,
-    students: 950,
-    image:
-      "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&q=80",
-    featured: false,
+    students: 2100,
+    image: "/images/Courses_5.jpg",
+    featured: true,
+    description:
+      "Learn to lead projects with confidence. Master planning, budgeting, and execution online. Get UK-certified in Project Management.",
   },
   {
     id: 6,
-    title: "MSc in Data Science",
-    category: "Information Technology",
-    duration: "24 Months",
+    title: "Healthcare Quality Management",
+    category: "Medical",
+    duration: "6 Months",
     mode: "Online",
-    level: "Postgraduate",
+    level: "Certificate",
     accreditation: "UK Accredited",
-    price: "AED 35,000",
+    price: "Contact Us",
     rating: 4.9,
+    students: 950,
+    image: "/images/Courses_6.jpg",
+    featured: false,
+    description:
+      "Healthcare Quality Management course trains professionals in patient safety, clinical governance, and performance improvement.",
+  },
+  {
+    id: 7,
+    title: "Banking And Financial Management",
+    category: "Banking Finance & Insurance",
+    duration: "6 Months",
+    mode: "Online",
+    level: "Certificate",
+    accreditation: "UK Accredited",
+    price: "Contact Us",
+    rating: 4.8,
+    students: 1200,
+    image: "/images/Courses_1.jpg",
+    featured: false,
+    description:
+      "Master banking, finance, and risk skills with real-world tools and earn a UK-recognised certificate—fully online.",
+  },
+  {
+    id: 8,
+    title: "Tourism and Hospitality Management",
+    category: "Tourism & Hospitality",
+    duration: "6 Months",
+    mode: "Online",
+    level: "Diploma",
+    accreditation: "UK Accredited",
+    price: "Contact Us",
+    rating: 4.7,
     students: 800,
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80",
-    featured: true,
+    image: "/images/Courses_2.jpg",
+    featured: false,
+    description:
+      "Master hotel, travel, and guest service skills online. Earn a UK-recognised certificate in Tourism and Hospitality Management.",
+  },
+  {
+    id: 9,
+    title: "Sports Events Management",
+    category: "Sports & Fitness Management",
+    duration: "4 Months",
+    mode: "Online",
+    level: "Certificate",
+    accreditation: "UK Accredited",
+    price: "Contact Us",
+    rating: 4.8,
+    students: 650,
+    image: "/images/Courses_3.jpg",
+    featured: false,
+    description:
+      "Learn to plan, fund, and deliver successful sports events. Study online and earn a UK-recognised certificate.",
   },
 ];
 
 const features = [
   {
-    icon: Monitor,
-    title: "100% Online Learning",
+    icon: Award,
+    title: "UK & International Accreditation",
     description:
-      "Study from anywhere with our state-of-the-art learning management system",
+      "Earn globally recognized qualifications from leading UK awarding bodies",
   },
   {
     icon: Clock,
-    title: "Flexible Schedule",
+    title: "Flexible, Self-Paced Learning",
     description:
-      "Learn at your own pace with lifetime access to course materials",
-  },
-  {
-    icon: Award,
-    title: "Accredited Certificates",
-    description:
-      "Earn globally recognized qualifications from UK awarding bodies",
-  },
-  {
-    icon: Headphones,
-    title: "24/7 Support",
-    description:
-      "Get help whenever you need with our dedicated student support team",
+      "Study at your own pace with structured learning options that fit your schedule",
   },
   {
     icon: Users,
-    title: "Expert Instructors",
-    description: "Learn from industry professionals with real-world experience",
+    title: "Industry-Expert Instructors",
+    description:
+      "Learn from experienced professionals with real-world expertise",
+  },
+  {
+    icon: Headphones,
+    title: "Dedicated Career Advisory",
+    description:
+      "Get personalized career guidance and placement assistance throughout your journey",
+  },
+  {
+    icon: Monitor,
+    title: "100% Online Learning",
+    description:
+      "Study from anywhere with our state-of-the-art learning platform",
   },
   {
     icon: FileText,
-    title: "Career Services",
-    description:
-      "Resume building, interview prep, and job placement assistance",
+    title: "Placement Assistance",
+    description: "Resume building, interview prep, and job placement support",
   },
 ];
 
 const stats = [
-  { value: "50+", label: "Online Courses" },
+  { value: "159+", label: "Online Courses" },
   { value: "35K+", label: "Students Enrolled" },
   { value: "98%", label: "Completion Rate" },
   { value: "4.9", label: "Average Rating" },
@@ -173,7 +230,7 @@ export default function OnlineCoursesPage() {
       <Header />
       <main>
         {/* Hero Section */}
-        <section className="relative py-20 bg-gradient-to-br from-[#0d6d55] to-[#0a5a46] overflow-hidden">
+        <section className="relative py-40 bg-gradient-to-br from-[#0d6d55] to-[#0a5a46] overflow-hidden">
           <div className="absolute inset-0 opacity-10">
             <div
               className="absolute inset-0"
@@ -190,28 +247,32 @@ export default function OnlineCoursesPage() {
             >
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 rounded-full text-white text-sm mb-6">
                 <BookOpen size={16} />
-                Accredited Online Learning
+                Access Education at Your Convenience
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-6">
                 Online Courses
               </h1>
               <p className="text-xl text-white/90 max-w-3xl mx-auto mb-8">
-                Advance your career with globally accredited online courses.
-                Study at your own pace and earn recognized qualifications from
-                anywhere in the world.
+                Access 159+ globally accredited online courses tailored for
+                students and working professionals. Gain recognized
+                qualifications from the comfort of your home while advancing
+                your career anywhere in the world.
               </p>
               <div className="flex flex-wrap justify-center gap-4">
                 <Link
-                  href="/apply"
+                  href="/courses"
                   className="bg-white text-[#0d6d55] px-8 py-4 rounded-full font-semibold hover:bg-[#c9a227] hover:text-white transition-colors inline-flex items-center gap-2"
                 >
                   Browse Courses
                   <ArrowRight size={18} />
                 </Link>
-                <button className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white/10 transition-colors inline-flex items-center gap-2">
-                  <Play size={18} />
-                  Watch Demo
-                </button>
+                <Link
+                  href="/contact"
+                  className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white/10 transition-colors inline-flex items-center gap-2"
+                >
+                  Contact Us
+                  <ArrowRight size={18} />
+                </Link>
               </div>
             </motion.div>
           </div>
@@ -393,7 +454,7 @@ export default function OnlineCoursesPage() {
 
             <div className="text-center mt-12">
               <Link
-                href="/programs"
+                href="/courses"
                 className="btn-primary px-8 py-4 rounded-full inline-flex items-center gap-2"
               >
                 View All Courses
