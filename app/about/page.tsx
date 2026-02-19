@@ -50,7 +50,8 @@ const milestones = [
   {
     year: "2001",
     title: "Foundation",
-    description: "Emirates International College established in Dubai",
+    description:
+      "International Center for Applied Studies & Research College established in Dubai",
   },
   {
     year: "2005",
@@ -152,9 +153,9 @@ export default function AboutPage() {
                 Shaping Tomorrow's Leaders
               </h1>
               <p className="text-xl text-white/80 max-w-3xl mx-auto">
-                International Center for Applied Studies & Research College has been at the
-                forefront of higher education in the Middle East, nurturing
-                global citizens and industry leaders.
+                International Center for Applied Studies & Research College has
+                been at the forefront of higher education in the Middle East,
+                nurturing global citizens and industry leaders.
               </p>
             </motion.div>
           </div>
@@ -177,12 +178,12 @@ export default function AboutPage() {
                 </h2>
                 <div className="space-y-4 text-gray-600 leading-relaxed">
                   <p>
-                    International Center for Applied Studies & Research College was established with a
-                    forward-thinking purpose—to connect academic learning with
-                    real-world career opportunities. From the beginning, our
-                    focus has been on making quality education accessible,
-                    relevant, and aligned with the needs of today&apos;s
-                    industries.
+                    International Center for Applied Studies & Research College
+                    was established with a forward-thinking purpose—to connect
+                    academic learning with real-world career opportunities. From
+                    the beginning, our focus has been on making quality
+                    education accessible, relevant, and aligned with the needs
+                    of today&apos;s industries.
                   </p>
                   <p>
                     We believe education is more than the transfer of knowledge;

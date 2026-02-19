@@ -103,11 +103,11 @@ export default function WhyChooseUs() {
               </span>
             </h2>
             <p className="text-gray-600 text-lg leading-relaxed mb-8">
-              At Emirates International College, we integrate rigorous academic
-              standards with practical industry exposure to prepare future
-              leaders for success in a global marketplace. Our dedication to
-              quality, innovation, and student achievement distinguishes us as a
-              center of excellence.
+              At International Center for Applied Studies & Research College, we
+              integrate rigorous academic standards with practical industry
+              exposure to prepare future leaders for success in a global
+              marketplace. Our dedication to quality, innovation, and student
+              achievement distinguishes us as a center of excellence.
             </p>
 
             {/* Key Stats */}

@@ -33,7 +33,7 @@ const newsItems = [
     category: "Achievement",
     title: "EIC Ranked Among Top 50 Universities in Middle East",
     excerpt:
-      "Emirates International College achieves prestigious ranking in the latest QS Middle East University Rankings for 2026.",
+      "International Center for Applied Studies & Research College achieves prestigious ranking in the latest QS Middle East University Rankings for 2026.",
     image: "/images/About_Story-01.jpg",
     date: "Jan 20, 2026",
     author: "Communications",
@@ -89,7 +89,8 @@ export default function NewsEvents() {
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto text-lg">
             Stay informed about campus activities, achievements, and important
-            announcements from International Center for Applied Studies & Research College
+            announcements from International Center for Applied Studies &
+            Research College
           </p>
         </motion.div>
 

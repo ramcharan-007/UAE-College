@@ -1,4 +1,4 @@
-# 📸 Image Requirements for Emirates International College Website
+# 📸 Image Requirements for International Center for Applied Studies & Research College Website
 
 This document lists all required images with their recommended dimensions and responsive variants. Place your images in `/public/images/` folder.
 

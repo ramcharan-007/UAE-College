@@ -24,7 +24,7 @@ import {
 const services = [
   {
     icon: Users,
-    title: "Talent Acquisition/Onboarding Support",
+    title: "Talent Acquisition",
     description:
       "Comprehensive recruitment solutions designed to identify, attract, and onboard high-quality professionals who align with your organization's culture, vision, and long-term objectives.",
     features: [

@@ -13,7 +13,7 @@ const testimonials = [
     image:
       "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop",
     quote:
-      "Emirates International College transformed my career. The global exposure and industry connections helped me land a leadership role at a Fortune 500 company.",
+      "International Center for Applied Studies & Research College transformed my career. The global exposure and industry connections helped me land a leadership role at a Fortune 500 company.",
     rating: 5,
     program: "Business Administration",
   },
@@ -105,7 +105,8 @@ export default function Testimonials() {
           </h2>
           <p className="text-white/70 max-w-2xl mx-auto text-lg">
             Hear from our global alumni who have transformed their careers and
-            lives through education at International Center for Applied Studies & Research College
+            lives through education at International Center for Applied Studies
+            & Research College
           </p>
         </motion.div>
 

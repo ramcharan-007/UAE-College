@@ -445,7 +445,7 @@ export default function ContactPage() {
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="Emirates International College Location"
+            title="International Center for Applied Studies & Research College Location"
           />
         </section>
       </main>
