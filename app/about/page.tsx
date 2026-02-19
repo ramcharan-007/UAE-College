@@ -194,8 +194,7 @@ export default function AboutPage() {
                     succeed in a competitive global landscape.
                   </p>
                   <p>
-                    Guided by innovation and driven by progress, Emirates
-                    International College continues to evolve with changing
+                    Guided by innovation and driven by progress, International Center for Applied Studies & Research College continues to evolve with changing
                     global trends. By embracing digital learning and practical
                     approaches to education, we are committed to nurturing every
                     learner&apos;s potential and helping them build meaningful,
