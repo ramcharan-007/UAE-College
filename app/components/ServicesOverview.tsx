@@ -22,14 +22,14 @@ const services = [
     title: "Online Courses",
     subtitle: "Access Education at Your Convenience",
     description:
-      "Access 50+ globally accredited online courses tailored for students and working professionals. Gain recognized qualifications from the comfort of your home while advancing your career.",
+      "Access 100+ globally accredited online courses tailored for students and working professionals. Gain recognized qualifications from the comfort of your home while advancing your career.",
     highlights: [
       "UK & International Accreditation",
       "Flexible, Self-Paced and Structured Learning Options",
       "Guidance from Industry-Expert Instructors",
       "Dedicated Career Advisory & Placement Assistance",
     ],
-    stats: { value: "50+", label: "Courses Available" },
+    stats: { value: "100+", label: "Courses Available" },
     href: "/online-courses",
     color: "bg-gradient-to-br from-[#0d6d55] to-[#0a5a46]",
     bgColor: "bg-[#0d6d55]/5",

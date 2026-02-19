@@ -152,7 +152,7 @@ export default function AboutPage() {
                 Shaping Tomorrow's Leaders
               </h1>
               <p className="text-xl text-white/80 max-w-3xl mx-auto">
-                Since 2001, Emirates International College has been at the
+                International Center for Applied Studies & Research College has been at the
                 forefront of higher education in the Middle East, nurturing
                 global citizens and industry leaders.
               </p>
@@ -177,7 +177,7 @@ export default function AboutPage() {
                 </h2>
                 <div className="space-y-4 text-gray-600 leading-relaxed">
                   <p>
-                    Emirates International College was established with a
+                    International Center for Applied Studies & Research College was established with a
                     forward-thinking purpose—to connect academic learning with
                     real-world career opportunities. From the beginning, our
                     focus has been on making quality education accessible,

@@ -218,7 +218,7 @@ const features = [
 ];
 
 const stats = [
-  { value: "159+", label: "Online Courses" },
+  { value: "100+", label: "Online Courses" },
   { value: "35K+", label: "Students Enrolled" },
   { value: "98%", label: "Completion Rate" },
   { value: "4.9", label: "Average Rating" },
@@ -253,7 +253,7 @@ export default function OnlineCoursesPage() {
                 Online Courses
               </h1>
               <p className="text-xl text-white/90 max-w-3xl mx-auto mb-8">
-                Access 159+ globally accredited online courses tailored for
+                Access 100+ globally accredited online courses tailored for
                 students and working professionals. Gain recognized
                 qualifications from the comfort of your home while advancing
                 your career anywhere in the world.

@@ -56,7 +56,7 @@ export default function CallToAction() {
               </h2>
               <p className="text-white/80 text-lg mb-8 leading-relaxed">
                 Join thousands of successful graduates who launched their
-                careers from Emirates International College. Take the first step
+                careers from International Center for Applied Studies & Research College. Take the first step
                 towards your dream today.
               </p>
 

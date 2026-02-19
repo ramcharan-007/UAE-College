@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import {
-  GraduationCap,
   Phone,
   Mail,
   MapPin,
@@ -72,23 +72,28 @@ export default function Footer() {
           {/* Brand Column */}
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center gap-3 mb-6">
-              <div className="w-14 h-14 bg-gradient-to-br from-[#c9a227] to-[#d4af37] rounded-lg flex items-center justify-center">
-                <GraduationCap className="text-[#0d1b4c]" size={32} />
-              </div>
+              <Image
+                src="/images/ICASR-ICON.svg"
+                alt="ICASR Logo"
+                width={56}
+                height={56}
+                className="w-14 h-14 object-contain"
+              />
               <div>
-                <h3 className="text-xl font-serif font-bold">
-                  Emirates International
-                </h3>
-                <p className="text-xs text-white/70 tracking-wider uppercase">
-                  International Center for Applied Studies & Research
+                <h3 className="text-xl font-serif font-bold">ICASR</h3>
+                <p className="text-[10px] text-white/70 tracking-wider uppercase leading-tight">
+                  International Center for
+                  <br />
+                  Applied Studies & Research
                 </p>
               </div>
             </Link>
             <p className="text-white/70 mb-6 leading-relaxed">
-              Emirates International College offers flexible, globally
-              recognized programs in business, technology, healthcare, and more.
-              With expert-led instruction and a focus on practical skills, we
-              prepare learners for success in today's dynamic world.
+              International Center for Applied Studies & Research College offers
+              flexible, globally recognized programs in business, technology,
+              healthcare, and more. With expert-led instruction and a focus on
+              practical skills, we prepare learners for success in today's
+              dynamic world.
             </p>
 
             {/* Social Links */}
@@ -202,30 +207,30 @@ export default function Footer() {
         </div>
 
         {/* Newsletter */}
-        <div className="mt-12 p-8 bg-gradient-to-r from-[#0d6d55] to-[#0d6d55]/80 rounded-2xl">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
+        <div className="mt-12 p-6 sm:p-8 bg-linear-to-r from-[#0d6d55] to-[#0d6d55]/80 rounded-2xl">
+          <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-center">
             <div>
               <h4 className="font-serif font-bold text-xl mb-2">
                 Subscribe to Our Newsletter
               </h4>
-              <p className="text-white/80">
+              <p className="text-white/80 text-sm sm:text-base">
                 Get the latest news, program updates, and exclusive offers.
               </p>
             </div>
-            <form className="flex gap-3">
+            <form className="flex flex-col sm:flex-row gap-3">
               <div className="flex-1 relative">
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  className="w-full px-5 py-4 rounded-lg bg-white/10 border border-white/20 text-white placeholder:text-white/50 focus:outline-none focus:border-[#c9a227]"
+                  className="w-full px-5 py-3 sm:py-4 rounded-lg bg-white/10 border border-white/20 text-white placeholder:text-white/50 focus:outline-none focus:border-[#c9a227]"
                 />
               </div>
               <button
                 type="submit"
-                className="btn-primary px-6 rounded-lg flex items-center gap-2"
+                className="btn-primary px-6 py-3 sm:py-4 rounded-lg flex items-center justify-center gap-2 shrink-0"
               >
                 <Send size={18} />
-                Subscribe
+                <span>Subscribe</span>
               </button>
             </form>
           </div>
@@ -237,8 +242,8 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-sm text-white/60">
-              © {new Date().getFullYear()} Emirates International College. All
-              rights reserved.
+              © {new Date().getFullYear()} International Center for Applied
+              Studies & Research College. All rights reserved.
             </div>
             <div className="flex items-center gap-6 text-sm text-white/60">
               <Link href="/terms" className="hover:text-[#c9a227]">

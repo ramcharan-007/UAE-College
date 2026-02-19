@@ -13,11 +13,23 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Emirates International College | World-Class Education in UAE",
+  metadataBase: new URL("https://icasr.ae"),
+  title: "ICASR | International Center for Applied Studies & Research",
   description:
-    "Experience excellence at Emirates International College - A globally accredited institution offering undergraduate and postgraduate programs. Join students from 50+ countries in the heart of Dubai.",
+    "Experience excellence at ICASR - International Center for Applied Studies & Research. A globally accredited institution offering online courses, HR solutions, marketing strategy, and education fairs.",
   keywords:
-    "UAE college, Dubai university, international education, undergraduate programs, postgraduate degrees, global accreditation, Middle East education",
+    "ICASR, International Center for Applied Studies & Research, UAE college, Dubai university, international education, online courses, HR solutions, marketing strategy, education fairs",
+  icons: {
+    icon: "/images/ICASR-ICON.svg",
+    shortcut: "/images/ICASR-ICON.svg",
+    apple: "/images/ICASR-ICON.svg",
+  },
+  openGraph: {
+    title: "ICASR | International Center for Applied Studies & Research",
+    description:
+      "A globally accredited institution offering online courses, HR solutions, marketing strategy, and education fairs.",
+    images: ["/images/ICASR-LOGO_01-01.svg"],
+  },
 };
 
 export default function RootLayout({

@@ -2,15 +2,14 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
+import { AnimatePresence, motion } from "framer-motion";
 import {
   Menu,
   X,
   ChevronDown,
-  Phone,
   Mail,
   MapPin,
-  GraduationCap,
   Globe,
   BookOpen,
   Users,
@@ -56,6 +55,18 @@ export default function Header() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // Lock body scroll when mobile menu is open
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isMobileMenuOpen]);
 
   return (
     <div className="fixed top-0 left-0 right-0 z-50">
@@ -113,30 +124,35 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-3 group">
-              <div
-                className={`w-12 h-12 rounded-lg flex items-center justify-center group-hover:scale-105 transition-transform ${
-                  isScrolled
-                    ? "bg-gradient-to-br from-[#0d1b4c] to-[#0d6d55]"
-                    : "bg-white/20 backdrop-blur-sm"
-                }`}
-              >
-                <GraduationCap className="text-white" size={28} />
+            <Link href="/" className="flex items-center gap-2 sm:gap-3 group">
+              <div className="group-hover:scale-105 transition-transform shrink-0">
+                <Image
+                  src="/images/ICASR-ICON.svg"
+                  alt="ICASR Logo"
+                  width={48}
+                  height={48}
+                  className="w-10 h-10 sm:w-12 sm:h-12 object-contain"
+                  priority
+                />
               </div>
-              <div className="hidden sm:block">
+              <div>
                 <h1
-                  className={`text-xl font-serif font-bold leading-tight transition-colors ${
+                  className={`text-sm sm:text-lg font-serif font-bold leading-tight transition-colors ${
                     isScrolled ? "text-[#0d1b4c]" : "text-white"
                   }`}
                 >
-                  Emirates International
+                  International Center for
+                  <span className="hidden sm:inline">
+                    <br />
+                  </span>{" "}
+                  Applied Studies & Research
                 </h1>
                 <p
-                  className={`text-xs tracking-wider uppercase transition-colors ${
+                  className={`hidden sm:block text-[10px] tracking-wider uppercase transition-colors leading-tight mt-0.5 ${
                     isScrolled ? "text-[#0d6d55]" : "text-white/80"
                   }`}
                 >
-                  International Center for Applied Studies & Research
+                  Shaping Growth Through Expertise
                 </p>
               </div>
             </Link>
@@ -225,9 +241,10 @@ export default function Header() {
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
-              className="lg:hidden bg-white border-t"
+              transition={{ duration: 0.3 }}
+              className="lg:hidden bg-white border-t shadow-xl overflow-hidden"
             >
-              <nav className="max-w-7xl mx-auto px-4 py-4">
+              <nav className="max-w-7xl mx-auto px-4 py-4 max-h-[calc(100vh-80px)] overflow-y-auto">
                 <Link
                   href="/"
                   onClick={() => setIsMobileMenuOpen(false)}
@@ -243,7 +260,7 @@ export default function Header() {
                     onClick={() => setIsMobileMenuOpen(false)}
                     className="flex items-center gap-3 py-3 border-b border-gray-100"
                   >
-                    <div className="w-10 h-10 bg-[#0d1b4c]/10 rounded-lg flex items-center justify-center">
+                    <div className="w-10 h-10 bg-[#0d1b4c]/10 rounded-lg flex items-center justify-center shrink-0">
                       <item.icon size={20} className="text-[#0d1b4c]" />
                     </div>
                     <div>
@@ -273,16 +290,11 @@ export default function Header() {
                   Contact
                 </Link>
 
-                <div className="pt-4 flex flex-col gap-3">
-                  <Link
-                    href="/login"
-                    className="btn-secondary py-3 rounded-full text-center"
-                  >
-                    Student Portal
-                  </Link>
+                <div className="pt-4">
                   <Link
                     href="/apply"
-                    className="btn-primary py-3 rounded-full text-center"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="btn-primary py-3 rounded-full text-center block"
                   >
                     Get Started
                   </Link>

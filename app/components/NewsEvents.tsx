@@ -89,7 +89,7 @@ export default function NewsEvents() {
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto text-lg">
             Stay informed about campus activities, achievements, and important
-            announcements from Emirates International College.
+            announcements from International Center for Applied Studies & Research College
           </p>
         </motion.div>
 

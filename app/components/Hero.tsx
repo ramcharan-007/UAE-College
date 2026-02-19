@@ -13,7 +13,7 @@ import {
 } from "lucide-react";
 
 const stats = [
-  { value: "50+", label: "Online Courses" },
+  { value: "100+", label: "Online Courses" },
   { value: "35K+", label: "Graduates Worldwide" },
   { value: "120+", label: "Countries Served" },
   { value: "98%", label: "Career Success Rate" },
@@ -23,7 +23,7 @@ const services = [
   {
     icon: BookOpen,
     title: "Online Courses",
-    desc: "50+ accredited programs",
+    desc: "100+ accredited programs",
     href: "/online-courses",
     color: "from-[#0d6d55] to-[#0a5a46]",
   },

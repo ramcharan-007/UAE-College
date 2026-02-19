@@ -105,7 +105,7 @@ export default function Testimonials() {
           </h2>
           <p className="text-white/70 max-w-2xl mx-auto text-lg">
             Hear from our global alumni who have transformed their careers and
-            lives through education at Emirates International College.
+            lives through education at International Center for Applied Studies & Research College
           </p>
         </motion.div>
 

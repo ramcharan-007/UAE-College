@@ -101,7 +101,7 @@ export default function ApplyPage() {
                 Application Submitted!
               </h1>
               <p className="text-gray-600 text-lg mb-8">
-                Thank you for applying to Emirates International College. We
+                Thank you for applying to International Center for Applied Studies & Research College We
                 have received your application and will review it within 5-7
                 business days. You will receive an email confirmation shortly.
               </p>

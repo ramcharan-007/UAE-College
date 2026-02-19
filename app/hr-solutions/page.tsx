@@ -30,7 +30,7 @@ const services = [
     features: [
       "C-Suite Recruitment",
       "Large-Scale Talent Acquisition",
-      "Career Fair Recruitment Support/Campus Hiring Programs",
+      "Career Fair Recruitment Support",
       "Contract & Temporary Resource Allocation",
     ],
   },
@@ -53,9 +53,9 @@ const services = [
       "Focused learning pathways that help employees acquire new skills, adapt to evolving industry demands, and maintain competitive advantage.",
     features: [
       "Emerging Leaders Programs",
-      "Core Skills Enhancement/Advanced Technical Training",
-      "Professional Skills Workshops/Interpersonal Skills Development",
-      "Microlearning Solutions/E-Learning Solutions",
+      "Core Skills Enhancement",
+      "Interpersonal Skills Development",
+      "E-Learning Solutions",
     ],
   },
   {
@@ -64,7 +64,7 @@ const services = [
     description:
       "Strategic advisory services designed to strengthen workforce effectiveness and align human resources with organizational goals.",
     features: [
-      "HR Policy Framework Design/HR Policy Development",
+      "HR Policy Development",
       "Competency Mapping",
       "Compensation & Benefits Strategy",
       "Organizational Design",
