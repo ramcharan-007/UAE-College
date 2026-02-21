@@ -27,9 +27,9 @@ const features = [
   },
   {
     icon: Users,
-    title: "Diverse Community",
+    title: "Diverse Global Network",
     description:
-      "Join a vibrant campus with students from 50+ countries, fostering cross-cultural learning and networking.",
+      "Learn alongside profressional and students from across countries in a truly international digital classrom.",
   },
   {
     icon: Briefcase,
@@ -39,9 +39,9 @@ const features = [
   },
   {
     icon: Building,
-    title: "State-of-the-Art Campus",
+    title: "Smart Digital Learning",
     description:
-      "Modern facilities including smart classrooms, research labs, and recreational centers in the heart of Dubai.",
+      "Access interactive live classes, recorded lectures and AI-powered tools - anyitime, anywhere.",
   },
   {
     icon: Wifi,
@@ -51,9 +51,9 @@ const features = [
   },
   {
     icon: BookOpen,
-    title: "Research Excellence",
+    title: "Innovation-Driven Education",
     description:
-      "Engage in groundbreaking research with access to well-funded labs and industry partnerships.",
+      "Work on real-world projects and industry-focused research that prepares you for career success.",
   },
   {
     icon: GraduationCap,
